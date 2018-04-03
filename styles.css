@@ -1,0 +1,208 @@
+@font-face {
+font-family: Times-Now;
+src: url(TimesNow-SemiLight.otf);
+}
+/** {
+	margin: 0;
+	padding: 0;
+}*/
+
+body{
+	font-family: Times-Now;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font-weight: normal;
+	text-align: center;
+	font-size: 10em;
+	margin-top: 10%;
+	letter-spacing: -8px;
+}
+h2{
+	font-size: 10em;
+	font-weight: normal;
+	text-align: center;
+	letter-spacing: -8px;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	color: red;
+}
+
+#head{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 10%;
+}
+/* OG SHIT */
+
+#mydiv {
+    position: fixed;
+    background-color: #f1f1f1;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    -webkit-user-select: none;  
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+    display: none;
+
+    border-top-right-radius:10px; 
+    border-top-left-radius:10px;
+    box-shadow: 2px 5px 20px #8C8C8C;
+}
+
+#mydiv.PlacesBut.clicked{
+	display: block;
+	z-index: 1;
+}
+#mydiv.FearsBut.clicked{
+	display: block;
+	z-index: 2;
+}
+
+#mydivheader {
+    padding: 3px;
+    cursor: move;
+    z-index: 1000;
+    background-color: #EFEFEF;
+    color: #383838;
+    font-family: Helvetica;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#close{
+	padding: 2px;
+	width: 10px;
+	height: 10px;
+	background-image: url("images/exit.svg");
+}
+
+
+
+
+/* THE DUMB SHIT */
+
+.draggable{
+	cursor: move;
+
+	position: fixed;
+	background-color: #f1f1f1;
+	text-align: center;
+	border: 1px solid #d3d3d3;
+	-webkit-user-select: none;  
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	
+	display: none;
+
+/*	border-top-right-radius:10px; 
+	border-top-left-radius:10px;
+	box-shadow: 2px 5px 20px #8C8C8C;
+*/
+	resize: both;
+	overflow: auto;
+}
+
+.draggable.PlacesBut.appear{
+	display: block;
+	z-index: 2;
+}
+.draggable.Places2But.appear{
+	display: block;
+	z-index: 3;
+}
+.draggable.Places3But.appear{
+	display: block;
+	z-index: 4;
+}
+
+.draggable.FearsBut.appear{
+	display: block;
+	z-index: 2;
+}
+.draggable.Fears2But.appear{
+	display: block;
+	z-index: 3;
+}
+.draggable.Fears3But.appear{
+	display: block;
+	z-index: 4;
+}
+
+
+
+
+
+.draggable.appear.clicked{
+	z-index: 100;
+}
+
+
+
+
+.wrapper{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	flex-wrap: wrap;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.imgContainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	resize: both;
+	overflow: auto;
+	z-index: 1001;
+}
+
+.imgContainer img{
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.modal{
+	cursor: pointer;
+}
+.modal:hover{
+	color: red;
+}
+
+
+.Places{}
+.Fears{}
+.Huge{}
+.Tiny{}
+.Supermarket{}
+.Hardware{}
+.Abstract{}
+.Physical{}
+.Influential{}
+.Events{}
+.Films{}
+.Designers
+.Books{}
+.Websites{}
+.Links{}
