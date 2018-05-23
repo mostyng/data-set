@@ -120,8 +120,12 @@ a:hover{
 }*/
 
 .draggable img{
-	width: 500px;
+	width: 50vw;
 	height: auto;
+	margin: 0 auto;
+	left: 25vw;
+	top: 12vh;
+	position: absolute;
 }
 
 .draggable::-webkit-resizer {
